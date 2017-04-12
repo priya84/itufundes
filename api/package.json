@@ -1,0 +1,31 @@
+{
+  "name": "itufundes",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run mockdb && npm run node-dev",
+    "node-dev": "node node_modules/nodemon/bin/nodemon.js --harmony-async-await .",
+    "mockdb": "node --harmony-async-await mockdb.js",
+    "start": "node ."
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "graphql": "^0.9.1",
+    "graphql-server-koa": "^0.6.0",
+    "graphql-tools": "^0.10.1",
+    "jwt-simple": "^0.5.1",
+    "kcors": "^1.3.2",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^3.2.0",
+    "koa-router": "^7.0.1",
+    "mongodb": "^2.2.11",
+    "mongoose": "^4.9.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "nodemon": "^1.11.0"
+  }
+}
